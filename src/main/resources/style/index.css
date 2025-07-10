@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.background-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fadeInOut 12s infinite;
+}
+
+.bg:nth-child(1) {
+    background-image: url('../assest/image/Selfi.jpg');
+    animation-delay: 0s;
+}
+
+.bg:nth-child(2) {
+    background-image: url('../assest/image/lotus Lamp.jpg');
+    animation-delay: 4s;
+}
+
+.bg:nth-child(3) {
+    background-image: url('../assest/image/Mirror.jpg');
+    animation-delay: 8s;
+}
+
+@keyframes fadeInOut {
+    0%, 33.33% {
+        opacity: 1;
+        z-index: 1;
+    }
+    33.34%, 100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+h1 {
+    color: white;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    margin-top: 40vh;
+}
+
+.main-box{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 2s ease-in-out;
+    filter: opacity(0.5);
+}
+
+.logo-and-name{
+    display: flex;
+}
+
+.navbar-edit{
+    background: transparent !important;
+    box-shadow: none;
+    border-bottom: 2px solid white;
+    height: 70px;
+
+}
+
+
+#reproduction_antique{
+    position: relative;
+    left: 0;
+}
+
+#library, #aboutUs, #home, #original_antique, #reproduction_antique {
+    position: relative;
+    left: 0;
+    top: 32%;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+.logo-text h2{
+    position: relative;
+    left: 40%;
+    top: -30%;
+    color: white;
+    font-weight: bold;
+    font-family: Scriptina;
+    font-size: 32px;
+}
+
+.logo-text img{
+    width: 70px;
+    border-radius: 100%;
+    margin-left: 0;
+    background: none;
+    position: relative;
+    top: 18%;
+}
+
+.navbar-tab-edit{
+    display: flex;
+    position: relative;
+    left: 20%;
+}
+
+.main_page h1{
+    margin-top: 10%;
+    text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.7);
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    font-size: 32px;          /* Bigger font */
+    color: white;             /* Ensure it's white */
+    font-weight: bold;        /* Make it bold */
+    text-transform: uppercase;/* Make it all caps */
+    letter-spacing: 1px;      /* Slight spacing */
+    text-align: center;
+
+}
+
+.main_page ul{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.search-bar-edit{
+    width: 700px;
+    height: 50px;
+    position: relative;
+    left: 25%;
+    margin-top: 40px;
+
+}
+
+.login-signup{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: -10%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#signUp{
+    position: relative;
+    left: 150%;
+    top: 10%;
+}
+
+#login{
+    position: relative;
+    left: 130%;
+    top: 10%;
+
+}
+
+.card-edit{
+
+}

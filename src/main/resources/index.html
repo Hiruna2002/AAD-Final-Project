@@ -4,153 +4,97 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-<style>
-    .navbar-tab{
-        position: relative;
-        left: 30%;
-        color: black;
-
-    }
-
-    .nav-logo{
-        width: 50px;
-        border-radius: 80%;
-    }
-
-    .logo-text{
-        font-family: Scriptina;
-        font-size: 32px;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    html, body {
-        height: 100%;
-        width: 100%;
-        overflow-x: hidden;
-        font-family: sans-serif;
-    }
-
-    .background-wrapper {
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    }
-
-    .bg {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        opacity: 0;
-        animation: fadeInOut 12s infinite;
-    }
-
-    .bg:nth-child(1) {
-        background-image: url('assest/image/Selfi.jpg');
-        animation-delay: 0s;
-    }
-
-    .bg:nth-child(2) {
-        background-image: url('assest/image/lotus Lamp.jpg');
-        animation-delay: 4s;
-    }
-
-    .bg:nth-child(3) {
-        background-image: url('assest/image/Mirror.jpg');
-        animation-delay: 8s;
-    }
-
-    @keyframes fadeInOut {
-        0%, 33.33% {
-            opacity: 1;
-            z-index: 1;
-        }
-        33.34%, 100% {
-            opacity: 0;
-            z-index: 0;
-        }
-    }
-
-    h1 {
-        color: white;
-        position: relative;
-        z-index: 10;
-        text-align: center;
-        margin-top: 40vh;
-    }
-
-</style>
+    <link href="style/index.css" rel="stylesheet">
 </head>
 <body>
 <section>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-<!--            <a class="navbar-brand" href="#">Navbar</a>-->
-
-            <div class="collapse navbar-collapse navbar-edit" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item logo-text">
-                        <img src="assest/image/CS%20Logo.png" alt="CS" class="nav-logo">
-                        CSAntiques
-                    </li>
-                    <li class="nav-item navbar-tab">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown navbar-tab">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Original Antiques
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Pettagam</a></li>
-                            <li><a class="dropdown-item" href="#">Kanappu</a></li>
-                            <li><a class="dropdown-item" href="#">Almari</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown navbar-tab">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Antiques Reproductions
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Gramophone</a></li>
-                            <li><a class="dropdown-item" href="#">Pettagam</a></li>
-                            <li><a class="dropdown-item" href="#">Kanappu</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown navbar-tab">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Library
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Blogs</a></li>
-                            <li><a class="dropdown-item" href="#">Events</a></li>
-                            <li><a class="dropdown-item" href="#">Gallery</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item navbar-tab">
-                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                    </li>
-                </ul>
-                <form class="d-flex nav-search" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
     <div class="background-wrapper">
         <div class="bg"></div>
         <div class="bg"></div>
         <div class="bg"></div>
     </div>
+    <div class="main-box">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-edit">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="logo-and-name">
+                            <li class="nav-item logo-text">
+                                <img src="assest/image/CS%20Logo.png" alt="CS" class="nav-logo">
+                                <h2>CSAntiques</h2>
+                            </li>
+                        </div>
+                        <div class="navbar-tab-edit">
+                            <li class="nav-item navbar-tab">
+                                <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
+                            </li>
+                            <li class="nav-item dropdown navbar-tab">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="original_antique">
+                                    Original Antiques
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Pettagam</a></li>
+                                    <li><a class="dropdown-item" href="#">Kanappu</a></li>
+                                    <li><a class="dropdown-item" href="#">Almari</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown navbar-tab">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="reproduction_antique">
+                                    Antiques Reproductions
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Gramophone</a></li>
+                                    <li><a class="dropdown-item" href="#">Pettagam</a></li>
+                                    <li><a class="dropdown-item" href="#">Kanappu</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown navbar-tab">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="library">
+                                    Library
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-edit">
+                                    <li><a class="dropdown-item" href="#">Blogs</a></li>
+                                    <li><a class="dropdown-item" href="#">Events</a></li>
+                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item navbar-tab">
+                                <a class="nav-link active" aria-current="page" href="#" id="aboutUs">About Us</a>
+                            </li>
+                        </div>
+                    </ul>
+                    <ul class="login-signup">
+                        <li class="nav-item navbar-tab">
+                            <a class="nav-link active" aria-current="page" href="#" id="login">Login</a>
+                        </li>
+                        <li class="nav-item navbar-tab">
+                            <a class="nav-link active" aria-current="page" href="#" id="signUp">SignUp</a>
+                        </li>
+                    </ul>
+                        </div>
+                </div>
+        </nav>
+        <div class="main_page">
+            <h1>Original Antique and Antique Reproduction</h1>
+            <ul>
+                <li>Original Antique</li>
+                <li>Antique Reproduction</li>
+                <li>Mask</li>
+                <li>Vintage</li>
+            </ul>
+            <form class="d-flex nav-search search-bar-edit" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <div>
+        <div class="card card-edit" style="width: 18rem;">
+            <img src="assest/image/Pettagam.jpg" class="card-img-top" alt="Pettagam">
+
+        </div>
+    </div>
+
 </section>
 
 
